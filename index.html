@@ -1,0 +1,55 @@
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <h1>Чибик-спасатель</h1>
+    <p>Учись первой помощи вместе с Чибиком</p>
+    <link rel="stylesheet" href="css/style.css">
+  </header>
+
+  <!-- Основная область: слева каталог, справа контент -->
+  <div class="layout">
+
+    <!-- ЛЕВОЕ МЕНЮ (каталог) -->
+    <aside class="sidebar">
+      <h2>Каталог</h2>
+      <nav>
+        <ul>
+          <li>
+            <button class="menu-btn" data-target="topics">Чему хотите научиться?</button>
+            <ul class="submenu" id="topics">
+              <li><a href="#" data-topic="cut">Порез</a></li>
+              <li><a href="#" data-topic="burn">Ожог</a></li>
+              <li><a href="#" data-topic="fracture">Перелом</a></li>
+              <li><a href="#" data-topic="faint">Обморок</a></li>
+              <li><a href="#" data-topic="bruise">Ушиб</a></li>
+            </ul>
+          </li>
+          <li><button class="menu-btn">Изученные темы</button></li>
+          <li><button class="menu-btn">Избранное</button></li>
+          <li><button class="menu-btn">О проекте</button></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- ПРАВАЯ ЧАСТЬ (контент) -->
+    <main class="content">
+      <section id="welcome">
+        <h2>Привет! Я Чибик-спасатель, давай учиться вместе оказывать первую помощь!</h2>
+        <p>Выбери тему слева — и я научу тебя оказывать первую помощь.</p>
+      </section>
+
+      <!-- Сюда JS будет вставлять карточки/информацию -->
+      <section id="catalog">
+        <h2>Каталог ситуаций</h2>
+        <div class="cards" id="cards"></div>
+      </section>
+    </main>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Чибик-спасатель</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
