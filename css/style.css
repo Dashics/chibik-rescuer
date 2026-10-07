@@ -189,6 +189,12 @@ footer {
   margin-top: 20px;
 }
 
+#suggestForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 /* ===== АДАПТИВ ПОД МОБИЛЬНЫЕ ===== */
 @media (max-width: 768px) {
   .layout {
